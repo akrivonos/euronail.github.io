@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Аполлинария</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("table").hide();
+            $("p#message").hide();
+            $("p#no_service").hide();
+        });
+    </script>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Аполлинария</span> Nail Studio
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><b>Главная</b></a>
+                    </li>
+                    <li>
+                        <a href="services.html"><b>Услуги</b></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#page-top"><b>Цены</b></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><b>Контакты</b></a>
+                    </li>
+                    <li>
+                        <a href="#"><b>Блог</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro" style="padding-top:5em">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 left white-container">
+                        <h2>Наши цены</h2>
+                        <div style="color:black">
+                            <p>Для кого: 
+                                <select name="gender">
+                                  <option value="0">Не выбрано</option> 
+                                  <option value="1">Для женщин</option> 
+                                  <option value="2">Для мужчин</option>
+                                  <option value="3">Для детей (до 13 лет)</option>
+                                <select>
+                            <br /><br />
+                            Вид услуги: 
+                                <select name="service">
+                                  <option value="0">Не выбрано</option>
+                                  <option value="1">Маникюр</option>
+                                  <option value="2">Педикюр</option>
+                                  <option value="3">Дополнительные услуги: покрытие и уход</option>
+                                  <option value="4">Комплексные программы</option>
+                                  <option value="5">Восковая депиляция</option>
+                                  <option value="6">Восковая депиляция: комплексные программы</option>
+                                  <option value="7">Подология</option>
+                                  <option value="8">Брови и ресницы</option>
+                                  <option value="9">Комплексные программы</option>
+                                <select>
+                            </p>
+
+                            <p id="message">Выберите услугу</p>
+                            <p id="no_service">Услуга не предоставляется</p>
+                            <table id="1" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Маникюр женский</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Аппаратный маникюр</td>
+                                        <td>60</td>
+                                        <td>180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Классический маникюр</td>
+                                        <td>60</td>
+                                        <td>140</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Европейский маникюр</td>
+                                        <td>60</td>
+                                        <td>130</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="2" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Педикюр женский</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Аппаратный педикюр</td>
+                                        <td>80</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Классический педикюр</td>
+                                        <td>80</td>
+                                        <td>260</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Комбинированный педикюр</td>
+                                        <td>80</td>
+                                        <td>280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="3" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Дополнительные услуги: покрытие и уход для женщин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Лечебное покрытие ногтей </td><td> 15</td><td> 70</td></tr>
+                                    <tr><td>Покрытие гель-лаком </td><td> 30</td><td> 240</td></tr>
+                                    <tr><td>Покрытие гель-лаком Френч </td><td> 40</td><td> 260</td></tr>
+                                    <tr><td>Снятие гель-лака </td><td> 30</td><td> 60</td></tr>
+                                    <tr><td>Покрытие ногтей гель-лаком клиента</td><td> 30</td><td> 110</td></tr>
+                                    <tr><td>Покрытие лаком </td><td> 20</td><td> 70</td></tr>
+                                    <tr><td>Покрытие лаком Френч</td><td> 30</td><td> 80</td></tr>
+                                    <tr><td>Покрытие ногтей лаком клиента</td><td> 20</td><td> 40</td></tr>
+                                    <tr><td>Снятие лака</td><td> 15</td><td> 20</td></tr>
+                                    <tr><td>Покрытие гелем</td><td> 90</td><td> 270</td></tr>
+                                    <tr><td>Покрытие гелем Френч</td><td> 120</td><td> 300</td></tr>
+                                    <tr><td>Коррекция (после покрытия гелем)</td><td> 100</td><td> 230</td></tr>
+                                    <tr><td>Наращивание ногтей под лак</td><td> 150</td><td> 450</td></tr>
+                                    <tr><td>Наращивание ногтей Френч</td><td> 180</td><td> 500</td></tr>
+                                    <tr><td>Коррекция ногтей (после наращивания)</td><td> 150</td><td> 320</td></tr>
+                                    <tr><td>Парафинотерапия для рук</td><td> 60</td><td> 100</td></tr>
+                                    <tr><td>Парафинотерапия для ног</td><td> 60</td><td> 130</td></tr>
+                                    <tr><td>SPA – уход за руками</td><td> 40</td><td> 110</td></tr>
+                                    <tr><td>SPA – уход за ногами</td><td> 40</td><td> 130</td></tr>
+                                    <tr><td>Массаж кистей</td><td> 10</td><td> 40</td></tr>
+                                    <tr><td>Массаж стоп</td><td> 15</td><td> 50</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="4" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Комплексные программы для женщин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Аппаратный маникюр + аппаратный педикюр</td><td> 140</td><td> 480</td></tr>
+                                    <tr><td>Классический маникюр + классический педикюр</td><td> 140</td><td> 400</td></tr>
+                                    <tr><td>Европейский маникюр + комбинированный педикюр</td><td> 140</td><td> 410</td></tr>
+                                    <tr><td>Классический маникюр + аппаратный педикюр</td><td> 140</td><td> 440</td></tr>
+                                    <tr><td>Аппаратный маникюр + аппаратный педикюр + SPA – уход за руками + SPA – уход за ногами + массаж кистей + массаж стоп</td><td> 245</td><td> 810</td></tr>
+                                    <tr><td>Классический маникюр + аппаратный педикюр + парафинотерапия для рук + парафинотерапия для ног</td><td> 260</td><td> 670</td></tr>
+                                    <tr><td>Аппаратный маникюр + аппаратный педикюр + лечебное покрытие ногтей (на руках и на ногах)</td><td> 170</td><td> 620</td></tr>
+                                    <tr><td>Аппаратный маникюр + парафинотерапия для рук</td><td> 120</td><td> 280</td></tr>
+                                    <tr><td>Аппаратный педикюр + парафинотерапия для ног</td><td> 140</td><td> 430</td></tr>
+                                    <tr><td>Аппаратный маникюр + SPA – уход за руками </td><td> 100</td><td> 290</td></tr>
+                                    <tr><td>Аппаратный педикюр + SPA – уход за ногами </td><td> 120</td><td> 430</td></tr>
+                                    <tr><td>Аппаратный маникюр + покрытие гель-лаком </td><td> 90</td><td> 420</td></tr>
+                                    <tr><td>Аппаратный маникюр + покрытие гелем</td><td> 150</td><td> 450</td></tr>
+                                    <tr><td>Аппаратный маникюр + наращивание ногтей под лак</td><td> 210</td><td> 630</td></tr>
+                                    <tr><td>Аппаратный педикюр + покрытие гель-лаком </td><td> 110</td><td> 540</td></tr>
+                                    <tr><td>Аппаратный педикюр + покрытие гелем</td><td> 170</td><td> 570</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="5" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Восковая депиляция для женщин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Брови</td><td> 15</td><td> 60</td></tr>
+                                    <tr><td>Область над верхней губой</td><td> 15</td><td> 70</td></tr>
+                                    <tr><td>Подбородок</td><td> 15</td><td> 70</td></tr>
+                                    <tr><td>Живот</td><td> 30</td><td> 80</td></tr>
+                                    <tr><td>Подмышечные впадины</td><td> 30</td><td> 90</td></tr>
+                                    <tr><td>Руки полностью</td><td> 40</td><td> 160</td></tr>
+                                    <tr><td>Спина</td><td> 40</td><td> 230</td></tr>
+                                    <tr><td>Ягодицы</td><td> 30</td><td> 100</td></tr>
+                                    <tr><td>Бикини (под трусики)</td><td> 30</td><td> 220</td></tr>
+                                    <tr><td>Глубокое бикини ( лобок + межягодичная складка + половые губы)</td><td> 60</td><td> 300</td></tr>
+                                    <tr><td>Бедра</td><td> 40</td><td> 140</td></tr>
+                                    <tr><td>Голени (включая колени)</td><td> 30</td><td> 120</td></tr>
+                                    <tr><td>Ноги (полностью)</td><td> 60</td><td> 250</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="6" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Восковая депиляция для женщин: комплексные программы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Область над верхней губой + брови</td><td> 30</td><td> 130</td></tr>
+                                    <tr><td>Область над верхней губой + подбородок</td><td> 30</td><td> 140</td></tr>
+                                    <tr><td>Область над верхней губой + брови + подбородок</td><td> 45</td><td> 200</td></tr>
+                                    <tr><td>Область над верхней губой + подмышечные впадины</td><td> 45</td><td> 160</td></tr>
+                                    <tr><td>Область над верхней губой + подмышечные впадины + бикини </td><td> 75</td><td> 380</td></tr>
+                                    <tr><td>Подмышечные впадины + бикини </td><td> 60</td><td> 310</td></tr>
+                                    <tr><td>Подмышечные впадины + глубокое бикини </td><td> 90</td><td> 390</td></tr>
+                                    <tr><td>Подмышечные впадины + бикини + ноги</td><td> 120</td><td> 560</td></tr>
+                                    <tr><td>Подмышечные впадины + глубокое бикини + ноги </td><td> 150</td><td> 640</td></tr>
+                                    <tr><td>Ноги + подмышечные впадины </td><td> 90</td><td> 340</td></tr>
+                                    <tr><td>Ноги + бикини</td><td> 90</td><td> 470</td></tr>
+                                    <tr><td>Ноги + глубокое бикини</td><td> 120</td><td> 550</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="7" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Подология</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Лечение мозоли</td><td> 30</td><td> 60</td></tr>
+                                    <tr><td>Коррекция вросшего ногтя</td><td> 30</td><td> 60</td></tr>
+                                    <tr><td>Установка B/S пластины (1 ноготь)</td><td> 20</td><td> 270</td></tr>
+                                    <tr><td>Протезирование (1 ноготь)</td><td> 20</td><td> 150</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="8" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Брови и ресницы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей</td><td> 30</td><td> 75</td></tr>
+                                    <tr><td>Окрашивание бровей</td><td> 30</td><td> 60</td></tr>
+                                    <tr><td>Окрашивание ресниц</td><td> 20</td><td> 50</td></tr>
+                                    <tr><td>Кератиновый лифтинг ресниц</td><td> 40</td><td> 800</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="9" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Комплексные программы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей + окрашивание бровей</td><td> 60</td><td> 135</td></tr>
+                                    <tr><td>Коррекция бровей + окрашивание бровей + окрашивание ресниц</td><td> 80</td><td> 185</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="10" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Маникюр мужской</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Аппаратный маникюр</td><td>60</td><td>190</td></tr>
+                                    <tr><td>Классический маникюр</td><td>60</td><td>160</td></tr>
+                                    <tr><td>Европейский маникюр</td><td>60</td><td>150</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="11" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Педикюр мужской</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Аппаратный педикюр</td><td>80</td><td>300</td></tr>
+                                    <tr><td>Классический педикюр</td><td>80</td><td>280</td></tr>
+                                    <tr><td>Комбинированный педикюр</td><td>80</td><td>290</td></tr>
+                               </tbody>
+                            </table>
+                            <table id="12" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Дополнительные услуги: покрытие и уход для мужчин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Парафинотерапия для рук</td><td>60</td><td>110</td></tr>
+                                    <tr><td>Парафинотерапия для ног</td><td>60</td><td>140</td></tr>
+                                    <tr><td>SPA – уход за руками</td><td>40</td><td>120</td></tr>
+                                    <tr><td>SPA – уход за ногами</td><td>40</td><td>140</td></tr>
+                                    <tr><td>Массаж кистей</td><td>10</td><td>40</td></tr>
+                                    <tr><td>Массаж стоп</td><td>15</td><td>60</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="13" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Комплексные программы для мужчин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Аппаратный маникюр + аппаратный педикюр</td><td>140</td><td>490</td></tr>
+                                    <tr><td>Классический маникюр + классический педикюр</td><td>140</td><td>440</td></tr>
+                                    <tr><td>Европейский маникюр + комбинированный педикюр</td><td>140</td><td>440</td></tr>
+                                    <tr><td>Классический маникюр + аппаратный педикюр</td><td>140</td><td>460</td></tr>
+                                    <tr><td>Аппаратный маникюр + аппаратный педикюр + SPA – уход за руками + SPA – уход за ногами + массаж кистей + массаж стоп</td><td>245</td><td>850</td></tr>
+                                    <tr><td>Классический маникюр + аппаратный педикюр + парафинотерапия для рук + парафинотерапия для ног</td><td>260</td><td>710</td></tr>
+                                    <tr><td>Аппаратный маникюр + парафинотерапия для рук</td><td>120</td><td>300</td></tr>
+                                    <tr><td>Аппаратный педикюр + парафинотерапия для ног</td><td>140</td><td>440</td></tr>
+                                    <tr><td>Аппаратный маникюр + SPA – уход за руками + массаж кистей</td><td>110</td><td>350</td></tr>
+                                    <tr><td>Аппаратный педикюр + SPA – уход за ногами + массаж стоп</td><td>135</td><td>500</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="14" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Восковая депиляция для мужчин</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Брови</td><td>20</td><td>70</td></tr>
+                                    <tr><td>Грудь</td><td>40</td><td>220</td></tr>
+                                    <tr><td>Живот</td><td>40</td><td>200</td></tr>
+                                    <tr><td>Подмышечные впадины</td><td>30</td><td>120</td></tr>
+                                    <tr><td>Плечи</td><td>30</td><td>90</td></tr>
+                                    <tr><td>Предплечье</td><td>40</td><td>90</td></tr>
+                                    <tr><td>Кисти рук и пальцы</td><td>20</td><td>70</td></tr>
+                                    <tr><td>Руки полностью</td><td>60</td><td>175</td></tr>
+                                    <tr><td>Спина</td><td>40</td><td>320</td></tr>
+                                    <tr><td>Область поясницы</td><td>30</td><td>90</td></tr>
+                                    <tr><td>Ягодицы</td><td>30</td><td>170</td></tr>
+                                    <tr><td>Бикини (лобок)</td><td>40</td><td>200</td></tr>
+                                    <tr><td>Глубокое бикини ( лобок + межягодичная складка + мошонка)</td><td>60</td><td>380</td></tr>
+                                    <tr><td>Бедра</td><td>40</td><td>160</td></tr>
+                                    <tr><td>Голени (включая колени)</td><td>40</td><td>140</td></tr>
+                                    <tr><td>Стопы (включая пальцы ног)</td><td>30</td><td>80</td></tr>
+                                    <tr><td>Ноги (полностью)</td><td>60</td><td>300</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="15" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Восковая депиляция для мужчин: комплексные программы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Брови + подмышечные впадины</td><td>50</td><td>190</td></tr>
+                                    <tr><td>Грудь + живот</td><td>80</td><td>420</td></tr>
+                                    <tr><td>Ягодицы + бикини</td><td>70</td><td>370</td></tr>
+                                    <tr><td>Ягодицы + бикини + подмышечные впадины</td><td>100</td><td>490</td></tr>
+                                    <tr><td>Ягодицы + глубокое бикини </td><td>90</td><td>550</td></tr>
+                                    <tr><td>Ягодицы + глубокое бикини + подмышечные впадины</td><td>120</td><td>670</td></tr>
+                                    <tr><td>Бикини + ноги + подмышечные впадины</td><td>130</td><td>620</td></tr>
+                                    <tr><td>Глубокое бикини + ноги + подмышечные впадины</td><td>150</td><td>800</td></tr>
+                                    <tr><td>Ноги + подмышечные впадины </td><td>90</td><td>420</td></tr>
+                                    <tr><td>Ноги + бикини + ягодицы + подмышечные впадины</td><td>160</td><td>790</td></tr>
+                                    <tr><td>Ноги + глубокое бикини + ягодици + подмышечные впадины</td><td>180</td><td>970</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="16" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Подология</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Лечение мозоли</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Коррекция вросшего ногтя</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Установка B/S пластины (1 ноготь)</td><td>20</td><td>270</td></tr>
+                                    <tr><td>Протезирование (1 ноготь)</td><td>20</td><td>150</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="17" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Брови и ресницы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей</td><td>30</td><td>75</td></tr>
+                                    <tr><td>Окрашивание бровей</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Окрашивание ресниц</td><td>20</td><td>50</td></tr>
+                                    <tr><td>Кератиновый лифтинг ресниц</td><td>40</td><td>800</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="18" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Комплексные программы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей + окрашивание бровей</td><td>60</td><td>135</td></tr>
+                                    <tr><td>Коррекция бровей + окрашивание бровей + окрашивание ресниц</td><td>80</td><td>185</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="19" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Детский маникюр и педикюр (до 13 лет)</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Детский маникюр</td><td>30</td><td>50</td></tr>
+                                    <tr><td>Детский педикюр</td><td>30</td><td>50</td></tr>
+                                    <tr><td>Покрытие лечебным лаком</td><td>15</td><td>30</td></tr>
+                                    <tr><td>Покрытие лаком</td><td>15</td><td>40</td></tr>
+                                    <tr><td>Детский маникюр и педикюр </td><td>60</td><td>90</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="20" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Подология</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Лечение мозоли</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Коррекция вросшего ногтя</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Установка B/S пластины (1 ноготь)</td><td>20</td><td>270</td></tr>
+                                    <tr><td>Протезирование (1 ноготь)</td><td>20</td><td>150</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="21" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Брови и ресницы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей</td><td>30</td><td>75</td></tr>
+                                    <tr><td>Окрашивание бровей</td><td>30</td><td>60</td></tr>
+                                    <tr><td>Окрашивание ресниц</td><td>20</td><td>50</td></tr>
+                                    <tr><td>Кератиновый лифтинг ресниц</td><td>40</td><td>800</td></tr>
+                                </tbody>
+                            </table>
+                            <table id="22" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Комплексные программы</th>
+                                        <th>Время, мин.</th>
+                                        <th>Стоимость, грн.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Коррекция бровей + окрашивание бровей</td><td>60</td><td>135</td></tr>
+                                    <tr><td>Коррекция бровей + окрашивание бровей + окрашивание ресниц</td><td>80</td><td>185</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core JavaScript Files -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <script src="js/prices.js"></script>
+
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
